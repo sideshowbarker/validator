@@ -42,15 +42,15 @@ jobs:
         with:
           python-version: '3.x'
       - name: Update submodules
-        run: python ./checker.py update
+        run: python checker.py update
       - name: Install dependencies
-        run: python ./checker.py dldeps
+        run: python checker.py dldeps
       - name: Build
         run: |
-          python .\checker.py build
-          python .\checker.py jar
-          python .\checker.py image
-          python .\checker.py war
+          python checker.py build
+          python checker.py jar
+          python checker.py image
+          python checker.py war
       - name: Import GPG signing key
         uses: crazy-max/ghaction-import-gpg@v3
         with:
