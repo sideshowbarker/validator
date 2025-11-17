@@ -56,3 +56,4 @@ body:
       description: "If you plan to implement this feature yourself, please check the box below."
       options:
         - label: "I’ll contribute an implementation for this myself."
+# yaml-language-server: $schema=https://www.schemastore.org/github-issue-forms.json
